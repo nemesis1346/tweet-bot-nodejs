@@ -1,0 +1,14 @@
+{
+  "name": "tweet_bot",
+  "version": "1.0.0",
+  "description": "bot for automatic tweets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "marco maigua",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.10"
+  }
+}
