@@ -92,6 +92,58 @@ var hashtags=[
     {
         "status": "blues menor, nuestros inicios https://www.youtube.com/watch?v=F1GiTA8wvxc",
         "title":"jam" 
+    },
+    {
+        "status": "https://open.spotify.com/album/6AfSoetp1twvTFMtcQnUC3",
+        "title":"colores single spotify" 
+    },
+    {
+        "status": "https://open.spotify.com/track/5iWs0tpho5CzjmpBxXRJtc",
+        "title":"desesperanza single spotify" 
+    },
+    {
+        "status": "https://open.spotify.com/album/2LFjuf1drWsFY8x94Lp14H",
+        "title":"sacha single spotify" 
+    },
+    {
+        "status": "https://open.spotify.com/album/6Fcw69tvhPlkEMWfRjEqRY",
+        "title":"reject single spotify" 
+    },
+    {
+        "status": "https://open.spotify.com/album/198DKG4ScQYAWydQKATJfa",
+        "title":"yana yurak single spotify" 
+    },
+    {
+        "status": "https://open.spotify.com/track/7d1UTHt8vSbeSBzjT8GSbY",
+        "title":"fandango album spotify" 
+    },
+    {
+        "status": "https://open.spotify.com/track/4eupRmV8enAj7v7IzGEHgd",
+        "title":"sacha album spotify" 
+    },
+    {
+        "status": "https://open.spotify.com/track/0a80vrffJwb1hr1GcTitLV",
+        "title":"under the moon potify" 
+    },
+    {
+        "status": "https://open.spotify.com/track/0a80vrffJwb1hr1GcTitLV",
+        "title":"desesperanza album potify" 
+    },
+    {
+        "status": "https://open.spotify.com/track/4lDWM0aXfjL1hKa74MtIy0",
+        "title":"colores album potify" 
+    },
+    {
+        "status": "https://open.spotify.com/track/5ZjqGigLIIUuyfk7OPPS7F",
+        "title":"yana yurak album potify" 
+    },
+    {
+        "status": "https://open.spotify.com/track/1RsKN2jveJR55QokFzJlkb",
+        "title":"tranasfiguracion album potify" 
+    },
+    {
+        "status": "https://www.facebook.com/mywaytripzz/",
+        "title":"myway trip album potify" 
     }
 ];
 var postTwitt = function () {
