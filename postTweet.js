@@ -148,9 +148,9 @@ var hashtags = [
 ];
 var postTwitt = function () {
 
-    var status = hashtags[Math.floor(Math.random()*hashtags.length)];
+    var status = hashtags[Math.floor(Math.random() * hashtags.length)];
     console.log('STATUS');
-console.log(status);
+    console.log(status);
     var params = {
         'status': status.status
     }
