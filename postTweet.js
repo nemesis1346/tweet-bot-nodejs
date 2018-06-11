@@ -6,37 +6,37 @@ var Twitter = new twit(config);
 //ARRAY of MyWay Trip
 var hashtags = [
     {
-        "status": "This production was an attempts to show the most human side of our ancestors, those that really live the culture, that speak our language, and preserve our memories of the past.  https://www.youtube.com/watch?v=5PpbDx-MieY",
+        "status": "This production was an attempts to show the most human side of our ancestors. #indigenous #latin #firstnations #ecuador #otavalo #diversidad #peace #elder #grandma. https://www.youtube.com/watch?v=5PpbDx-MieY",
         "title": "PAYA MAMA VIDEO ingles"
     },
     {
-        "status": "Este trabajo es un esfuerzo por mostrar el lado más humano de nuestros taytas y mamas, aquellos que de verdad viven la cultura. https://www.youtube.com/watch?v=5PpbDx-MieY",
+        "status": "Este trabajo es un esfuerzo por mostrar el lado más humano de nuestros taytas y mamas.  #indigenous #latin #firstnations #ecuador #otavalo #diversidad #peace #elder #grandma. https://www.youtube.com/watch?v=5PpbDx-MieY",
         "title": "PAYA MAMA VIDEO espanol"
     },
     {
-        "status": "This is a small documentary about MyWay Trip music groups and several other artists and enterpreneurs that feed the colours of the art in Otavalo-Ecuador. https://www.youtube.com/watch?v=KBJ3C50Ew-g",
+        "status": "This is a small documentary about MyWay Trip music groups and several other artists and enterpreneurs. #entrepreneur #emprendedor #ecuador #otavalo #negocio. https://www.youtube.com/watch?v=KBJ3C50Ew-g",
         "title": "emprendimiento ingles"
     },
     {
-        "status": "Pequeño documental sobre varios emprendimientos de #Otavaleños en varias instancias sociales, inluyendo la banda MyWay Trip. https://www.youtube.com/watch?v=KBJ3C50Ew-g",
+        "status": "Pequeño documental sobre varios emprendimientos de #Otavaleños en varias instancias sociales, inluyendo la banda MyWay Trip. #entrepreneur #startup #social #non-profit. https://www.youtube.com/watch?v=KBJ3C50Ew-g",
         "title": "emprendimiento espanol"
     },
     {
-        "status": " The artistic team was #AmadoMaigua and #AlejandraLema. We are very thankful in working with great musicians such as them and we are happy with the results. https://www.youtube.com/watch?v=KuxiW9H6ueo",
+        "status": " The artistic team was #AmadoMaigua and #AlejandraLema. We are very thankful in working with great musicians. #kichwa #jazz #rock #blues #R&B. https://www.youtube.com/watch?v=KuxiW9H6ueo",
         "title": "yana yurak ingles"
     },
     {
-        "status": "Primer Sencillo y video clip del grupo musical #MyWayTrip. Este concepto fue nuestro primero intento de mostrar algo diferente. https://www.youtube.com/watch?v=KuxiW9H6ueo",
+        "status": "Primer Sencillo y video clip del grupo musical #MyWayTrip. Este concepto fue nuestro primero intento de mostrar algo diferente. #kichwa #jazz #rock #blues #R&B. https://www.youtube.com/watch?v=KuxiW9H6ueo",
         "title": "yana yurak espanol"
     },
     {
-        "status": "Thanks to the #PlataformSonica program for trusting in our work and giving us the permission to make use of the #NationalCongress of Ecuador to represent our first album #YanaYurak. https://www.youtube.com/watch?v=xSru2GptCLs",
+        "status": "Thanks to the #PlataformSonica program for trusting in our work and giving us the permission to make use of the #NationalCongress of Ecuador to represent our first album #YanaYurak #congress #ecuador #concert #concierto. https://www.youtube.com/watch?v=xSru2GptCLs",
         "title": "concierto asamblea general ingles"
     },
     {
-        "status": "Gracias al programa Plataforma Sónica por confiar en nuestro trabajo y dejarnos hacer uso del espacio de la Asamblea Nacional del Ecuador para presentar nuestro primer album Yana Yurak. . https://www.youtube.com/watch?v=xSru2GptCLs",
+        "status": "Gracias al programa Plataforma Sónica por confiar en nuestro trabajo y dejarnos hacer uso del espacio de la Asamblea Nacional del Ecuador para presentar nuestro primer album #YanaYurak #congress #ecuador #concert #concierto.. https://www.youtube.com/watch?v=xSru2GptCLs",
         "title": "concierto asamblea general espanol"
-    },
+    },//TODO:KEEP DOING THIS 
     {
         "status": "In this project we try to evoque the sounds of the #andean #nostalgie from another perspective, from the #RUNAs, human beings that grow up in the #Andean #Region. https://www.youtube.com/watch?v=h5QaIYngEjU",
         "title": "desesperanza ingles"
