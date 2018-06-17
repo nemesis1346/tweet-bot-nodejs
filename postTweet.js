@@ -233,28 +233,38 @@ var postTwitt = function () {
             console.log(data);
             // grab ID of tweet to retweet
             if (data.statuses.length > 0) {
-                var retweetId = data.statuses[0].id_str;
+
                 // extract information of the twitt
                 console.log(data.statuses[0]);
                 //TODO: CUSTOMIZE THE STATUS 
                 //POST 
-                var status = dataTwitts[Math.floor(Math.random() * hashtags.length)];
-                console.log('STATUS');
-                console.log(status);
-                var params = {
-                    'status': status.status
-                }
-                Twitter.post('statuses/update', params, function (err, response) {
-                    if (response) {
-                        console.log(response);
-                        console.log('Posted!!!');
-                    }
-                    // if there was an error while tweeting
-                    if (err) {
-                        console.log(err);
-                        console.log('Something went wrong while Posting... Duplication maybe...');
-                    }
+                var textDataList = [];
+                var hasttagsDataList=[];
+                data.statuses.forEach(element => {
+                    textDataList.push(element.text);
                 });
+                console.log(textDataList);
+                textDataList.forEach(element => {
+                    var currentListHashtags=getHashTags(textDataList);
+                    console.log(currentListHashtags);
+                });
+                // var status = dataTwitts[Math.floor(Math.random() * hashtags.length)];
+                // console.log('STATUS');
+                // console.log(status);
+                // var params = {
+                //     'status': status.status
+                // }
+                // Twitter.post('statuses/update', params, function (err, response) {
+                //     if (response) {
+                //         console.log(response);
+                //         console.log('Posted!!!');
+                //     }
+                //     // if there was an error while tweeting
+                //     if (err) {
+                //         console.log(err);
+                //         console.log('Something went wrong while Posting... Duplication maybe...');
+                //     }
+                // });
 
             } else {
                 retweet();
