@@ -235,40 +235,53 @@ var postTwitt = function () {
             if (data.statuses.length > 0) {
 
                 // extract information of the twitt
-                console.log(data.statuses[0]);
                 //TODO: CUSTOMIZE THE STATUS 
                 //POST 
                 var textDataList = [];
-                var hasttagsDataList=[];
+                var hashtagsDataList = [];
                 data.statuses.forEach(element => {
                     textDataList.push(element.text);
                 });
-                console.log(textDataList);
                 textDataList.forEach(element => {
-                    var currentListHashtags=getHashTags(textDataList);
-                    console.log(currentListHashtags);
+                    var currentListHashtags = getHashTags(textDataList);
+                    currentListHashtags.forEach(element => {
+                        hashtagsDataList.push(element);
+                    });
                 });
-                // var status = dataTwitts[Math.floor(Math.random() * hashtags.length)];
-                // console.log('STATUS');
-                // console.log(status);
-                // var params = {
-                //     'status': status.status
-                // }
-                // Twitter.post('statuses/update', params, function (err, response) {
-                //     if (response) {
-                //         console.log(response);
-                //         console.log('Posted!!!');
-                //     }
-                //     // if there was an error while tweeting
-                //     if (err) {
-                //         console.log(err);
-                //         console.log('Something went wrong while Posting... Duplication maybe...');
-                //     }
-                // });
+                var uniqueHashtags = [];
+                for (let i = 0; i < hashtagsDataList.length; i++) {
+                    if (uniqueHashtags.indexOf(hashtagsDataList[i]) == -1) {
+                        uniqueHashtags.push(hashtagsDataList[i])
+                    }
+                }
+                if (uniqueHashtags.length > 0) {
+                    console.log(uniqueHashtags);
 
+                    //  var status = dataTwitts[Math.floor(Math.random() * hashtags.length)];
+                    //                 console.log('STATUS');
+                    //                 console.log(status);
+                    //                 var params = {
+                    //                     'status': status.status
+                    //                 }
+                    //                 Twitter.post('statuses/update', params, function (err, response) {
+                    //                     if (response) {
+                    //                         console.log(response);
+                    //                         console.log('Posted!!!');
+                    //                     }
+                    //                     // if there was an error while tweeting
+                    //                     if (err) {
+                    //                         console.log(err);
+                    //                         console.log('Something went wrong while Posting... Duplication maybe...');
+                    //                     }
+                    //                 });
+
+                } else {
+                    console.log('Twitt not found');
+                    retweet();
+                }
             } else {
-                retweet();
                 console.log('Twitt not found');
+                retweet();
             }
         }
         // if unable to Search a tweet
