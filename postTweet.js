@@ -233,9 +233,7 @@ var postTwitt = function () {
             console.log(data);
             // grab ID of tweet to retweet
             if (data.statuses.length > 0) {
-
                 // extract information of the twitt
-                //TODO: CUSTOMIZE THE STATUS 
                 //POST 
                 var textDataList = [];
                 var hashtagsDataList = [];
@@ -257,23 +255,30 @@ var postTwitt = function () {
                 if (uniqueHashtags.length > 0) {
                     console.log(uniqueHashtags);
 
-                    //  var status = dataTwitts[Math.floor(Math.random() * hashtags.length)];
-                    //                 console.log('STATUS');
-                    //                 console.log(status);
-                    //                 var params = {
-                    //                     'status': status.status
-                    //                 }
-                    //                 Twitter.post('statuses/update', params, function (err, response) {
-                    //                     if (response) {
-                    //                         console.log(response);
-                    //                         console.log('Posted!!!');
-                    //                     }
-                    //                     // if there was an error while tweeting
-                    //                     if (err) {
-                    //                         console.log(err);
-                    //                         console.log('Something went wrong while Posting... Duplication maybe...');
-                    //                     }
-                    //                 });
+                    var status = "";
+                    //This is the random pickup of the data twitts
+                    status += dataTwitts[Math.floor(Math.random() * hashtags.length)].status + " ";
+                    var counter = 0;
+                    while (status.length < 150) {
+                        //unique hasshtags are retrieved and hastags are inserted by the programmer
+                        status += "#" + uniqueHashtags[counter]+" " + hashtags[counter]+" ";
+                        counter++;
+                    }
+                    console.log(status);
+                    var params = {
+                        'status': status
+                    }
+                    Twitter.post('statuses/update', params, function (err, response) {
+                        if (response) {
+                            console.log(response);
+                            console.log('Posted!!!');
+                        }
+                        // if there was an error while tweeting
+                        if (err) {
+                            console.log(err);
+                            console.log('Something went wrong while Posting... Duplication maybe...');
+                        }
+                    });
 
                 } else {
                     console.log('Twitt not found');
