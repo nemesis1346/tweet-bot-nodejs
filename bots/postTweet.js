@@ -282,11 +282,11 @@ var postTwitt = function () {
 
                 } else {
                     console.log('Twitt not found');
-                    retweet();
+                    postTwitt();
                 }
             } else {
                 console.log('Twitt not found');
-                retweet();
+                postTwitt();
             }
         }
         // if unable to Search a tweet
