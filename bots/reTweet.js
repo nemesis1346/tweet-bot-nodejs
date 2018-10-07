@@ -2,17 +2,7 @@ var twit = require('twit');
 var config = require('./config.js');
 var Twitter = new twit(config);
 // RETWEET BOT ==========================
-var hashtags=['#art',
-'#music',
-'#jazz',
-"#rock",
-'#spirit',
-'#chaman',
-'#santana',
-'#kichwa',
-'#ecuador',
-'#firstnations',
-'#indigenous'];
+var hashtags=require('./data/reTweetHashtags');
 var retweet = function () {
     var status = hashtags[Math.floor(Math.random() * hashtags.length)];
     console.log('STATUS');
