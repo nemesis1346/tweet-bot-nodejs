@@ -1,28 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import { Route } from 'react-router-dom';
+import AddTweetPage from './components/pages/AddTweetPage';
+import TweetListPage from './components/pages/TweetListPage';
+import SettingsPage from './components/pages/SettingsPage';
+import MainPage from './components/pages/MainPage';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="ui container">
+        <Route path="/" exact component={MainPage} />
+        <Route path='/addTweet' exact component={AddTweetPage} />
+        <Route path="/listTweets" exact component={TweetListPage} />
+        <Route path="/settings" exact component={SettingsPage} />
       </div>
-    );
+    )
   }
 }
-
 export default App;

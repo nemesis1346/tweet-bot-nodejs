@@ -10,3 +10,12 @@ yarn
 yarn add redux react-redux
 yarn add --dev redux-devtools-extension
 yarn add axios
+
+#Install extra packages
+sudo npm install -g semantic-ui-react
+sudo npm install -g react-router-dom
+sudo npm install -g react-bootstrap-table
+sudo npm install -g prop-types
+sudo npm install -g react-redux
+sudo npm install -g react-md-spinner
+sudo npm install -g react-router-dom
